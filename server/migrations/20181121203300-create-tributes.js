@@ -16,11 +16,18 @@ module.exports = {
     },
     website: {
       type: Sequelize.STRING,
-      allowNull: false,
     },
     comment: {
       type: Sequelize.TEXT,
       allowNull: false,
+    },
+    createdAt: {
+      allowNull: false,
+      type: Sequelize.DATE,
+    },
+    updatedAt: {
+      allowNull: false,
+      type: Sequelize.DATE,
     },
   }),
   down: queryInterface => queryInterface.dropTable('Tributes'),

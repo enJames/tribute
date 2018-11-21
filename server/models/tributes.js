@@ -10,11 +10,18 @@ const tributes = (sequelize, DataTypes) => {
     },
     website: {
       type: DataTypes.STRING,
-      allowNull: false,
     },
     comment: {
       type: DataTypes.TEXT,
       allowNull: false,
+    },
+    createdAt: {
+      allowNull: false,
+      type: DataTypes.DATE,
+    },
+    updatedAt: {
+      allowNull: false,
+      type: DataTypes.DATE,
     },
   });
   return Tributes;
